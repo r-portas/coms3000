@@ -18,6 +18,14 @@ Authentication is the process of validating that identity, such as checking if a
 
 If a single character is changed in the input, the hash will be the same. Thus the function does not create unique hashes for different messages, thus the collision resistance property is not held. In addition similar messages (strings of the same length, with one characters being different) will be identical, which is also not ideal.
 
+Does not have strong collision resistance, since there is a large likelihood that two messages have the same hash.
+
+Does not have weak collision resistance, since it is trivial to find a input that hashes to a given hash.
+
+However the function does have compression, as the output sample space is much smaller than the input space.
+
+The function is also easy to compute.
+
 The pre-image property will be held as it is nearly impossible to guess the original message.
 
 ## Q3b: What's the probability of  a collision in h() for two chosen inputs x1 and x2
