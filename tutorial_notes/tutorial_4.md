@@ -21,11 +21,11 @@ However we can brute force it with a quick python script:
 ```python
 import hashlib
 
-desired = "0111"
+desired = "7"
 
 def hash(inp):
     global desired
-    m = hashlib.md5(str.encode(inp)).hexdigest()[0:4]
+    m = hashlib.md5(str.encode(inp)).hexdigest()[0]
     if m == desired:
         print("md5(" + inp + ") = " + desired)
         exit()
@@ -44,42 +44,47 @@ main()
 Running this yields:
 ```bash
 $ python3 md5_hash.py
-Hashed 0 values
-Hashed 1000 values
-Hashed 2000 values
-Hashed 3000 values
-Hashed 4000 values
-Hashed 5000 values
-Hashed 6000 values
-Hashed 7000 values
-Hashed 8000 values
-Hashed 9000 values
-Hashed 10000 values
-Hashed 11000 values
-Hashed 12000 values
-Hashed 13000 values
-Hashed 14000 values
-Hashed 15000 values
-Hashed 16000 values
-Hashed 17000 values
-Hashed 18000 values
-Hashed 19000 values
-Hashed 20000 values
-Hashed 21000 values
-Hashed 22000 values
-Hashed 23000 values
-Hashed 24000 values
-Hashed 25000 values
-Hashed 26000 values
-Hashed 27000 values
-Hashed 28000 values
-Hashed 29000 values
 
-md5(29504) = 0111
+md5(17) = 7
 ```
 
-It took 29504 guesses to find a matching hash
+It took 17 guesses to find a matching hash.
+
+Since the output size is 4 bits, the probablity is 0.5^4, or 1/16. So it is estimated to take 16 attempts to find a solution
 
 ## Question 4
 
+Using the same program from above, but attempting to find 'e' yields:
 
+```bash
+$ python3 md5_hash.py
+
+md5(3) = e
+```
+
+It took three guesses to find the outcome. The expected probability will be the same as the above answer, 1/16
+
+## Question 5
+
+Using the same function in Q3, but changing the input to append my student number yields:
+```bash
+$ python3 md5_hash.py
+
+md5(43560846 0) = e
+```
+
+The program found a match with the first attempt
+
+## Question 6
+
+Question 5 should be easier to compute, since we are looking for any two strings that match.
+
+Thus we can store a table of previously found hashes and compare against that, which is much easier than attempting to find a specific value such as in question 4.
+
+## Question 7
+
+Removing the secure authentication protocols will force the server to fall back to basic authenication, in which the password is transmitted in plain text which the attacker could easily intercept and get the plaintext password.
+
+## Question 8
+
+An attacker could set up a fake server and trick the user to authenticate with it. The fake server then collects the hashed password. The attacker can then authentice with the real server using the collected hashed password.
