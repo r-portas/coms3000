@@ -24,11 +24,11 @@ Non-repudiation: SSH public and private keys
 
 ## Threat, Vulnerability and Risk
 
-- Threat
+- Threat:
 Any circumstance or event with the potential to cause harm to a information system.
 
-- Vulnerability
+- Vulnerability:
 Weakness in a information system
 
-- Risk
+- Risk:
 The likelihood that a particular threat using a specific attack, will exploit a particular vulnerability of a system that results in undesirable consequences.
