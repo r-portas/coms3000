@@ -1,9 +1,3 @@
----
-title: Tutorial 4
-author: Roy Portas - 4356084
-geometry: margin=3cm
----
-
 # Tutorial 4: Hash functions, Authentication protocols and Biometrics
 
 ## Question 1
