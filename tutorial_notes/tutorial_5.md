@@ -60,3 +60,5 @@ A valid user is rejected by the system
     High: Hard to fake a fingerprint
 
 ## Question 3
+
+![block diagram](tut_5_block_diagram.png "Block Diagram")
