@@ -62,3 +62,56 @@ A valid user is rejected by the system
 ## Question 3
 
 ![block diagram](tut_5_block_diagram.png "Block Diagram")
+
+Two potential replay attacks are:
+
+1. Stealing the user's biometrics (Fingerprint, etc) and using it to authenticate with the server as usual
+
+2. Setting up a fake server, intercepting a valid transaction then setting up a fake server to mirror the responses.
+
+## Question 4
+
+a) Identification has the highest false match rate, this is because the device is searching through a database to find the highest match against many different users. Whereas verification is checking against a single user, thus less chance of a false match.
+
+b) 
+
+```
+P1: Probability of a False Match in verification mode
+PN: Probability of a False Match in identification mode
+
+PN = Probability of a single false match * number of matches
+PN = P1 * N
+```
+
+## Question 5
+
+a) 
+
+```
+FMR: a * 0.5 = 0.125
+FNMR: b * 0.5 = 0.25
+
+a: 1/(6 - 2) = 0.25
+b: 1/(7 - 5) = 0.5
+```
+
+b) The t value will need to be closer to 5 to achieve a smaller FNMR. However this will increase the FMR.
+
+Thus the exact answer will be:
+
+```
+0.025 = b * t
+0.025 = 0.5 * t
+0.05 = t
+act = 5 + t
+act = 5.05
+
+FMR: 0.2375
+```
+
+c) Equal error rate
+
+```
+(6 - t) * 0.25 = (t - 5) * 0.5
+= 5.33
+```
