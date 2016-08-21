@@ -56,9 +56,23 @@ DoS attacks are some of the most frequent, since they are relatively easy to do.
 
 \subsection{Ease of Use}
 
-Users enjoy a system which is easy to use. So much so that usability is a large part when designing user facing applications. In order to make the experience more seemless, websites opt to stay logged in. 
+Users enjoy a system which is accessible and easy to use. So much so that usability is a large part when designing user facing applications. 
+In order to make the experience more seemless, websites adopt various techniques to streamline the process. For example Single Sign On and persistant log ins. These methods may streamline a user's experience, however thos leads to security vulnerabilties\cite{javaid_secure_2013}.
+
+\begin{itemize}
+    \item Single Sign On\\
+        Single sign on provides a uniform method of authenicating with a service. This method allows users to remember only one password, however if that password is compromised an attacker could get access many accounts at once.
+
+    \item Persistant login\\
+        Persistant login allows user's sessions to be saved to allow user's to access the service later without having to reenter their password.\cite{soares_secure_2013}. However if an attacker gains physical access to a device, they can access the all of the user's services without needing to log in.
+\end{itemize}
+
+Overall these methods allow user's easier access to a service, they also provide easy access to an attacker. Thus this vulnerability could open the doors to a possible service hijack threat.
 
 \subsection{Insecure APIs}
+An API is a method of access data from a web service, including personal records and user data. For this reason it is vital that these are secure \cite{lu_keeping_2014}.\\
+\\
+One of the largest attack vectors for API's is weak password hashing. If the api is using weak security than the attacker can intercept the password and exploit it to access a user's data.
 
 \subsection{Malicious Employees}
 
