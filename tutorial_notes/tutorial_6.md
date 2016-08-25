@@ -87,8 +87,12 @@ Allowed methods:
 
 ## Question 9
 
-![Lattice](resources/tut_5_block_diagram.png "Lattice")
+![Lattice](resources/AuthLattice.png "Lattice")
 
 ## Question 10
 
+Reading a file above the current security level will cause the user's high water mark to move. As this will change the current security level to the level of the file.
 
+## Question 11
+
+A covert channel allows the transfer of information between processes who are not mean't to communicate with each other, as outlined by the system's security policy.
