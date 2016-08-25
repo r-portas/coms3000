@@ -88,6 +88,7 @@ Allowed methods:
 ## Question 9
 
 ![Lattice](resources/AuthLattice.png "Lattice")
+\ 
 
 ## Question 10
 
