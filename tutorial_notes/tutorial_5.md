@@ -61,7 +61,7 @@ A valid user is rejected by the system
 
 ## Question 3
 
-![block diagram](tut_5_block_diagram.png "Block Diagram")
+![block diagram](resources/tut_5_block_diagram.png "Block Diagram")
 
 Two potential replay attacks are:
 
