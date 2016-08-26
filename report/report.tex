@@ -72,11 +72,19 @@ Overall these methods allow user's easier access to a service, they also provide
 \subsection{Insecure APIs}
 An API is a method of access data from a web service, including personal records and user data. For this reason it is vital that these are secure \cite{lu_keeping_2014}.\\
 \\
-One of the largest attack vectors for API's is weak password hashing. If the api is using weak security than the attacker can intercept the password and exploit it to access a user's data.
+One of the largest attack vectors for API's is weak password hashing. If the api is using weak security than the attacker can intercept the password and exploit it to access a user's data. This is a significant threat, as if this can happen all user's of the service can get their credentials stolen and account compromised, leading to a serious service hijack threat.
 
 \subsection{Malicious Employees}
 
+Another possible vulnerability are malicious employees. Generally companies spend considerable resources securing information systems from the outside, however generally they lack the same level of security within the company. This can include giving employees incorrect permissions on file systems and not securing rooms that contain sensitive documents.\\
+\\
+This is a significant issue, as a malicious employee could take user's records from a database and leak password. This would cause damage to both the business and the user's of the system.
+
 \subsection{Virtual Machine Escape}
+
+Virtual machine escaping is a newer vulnerability that has only really emerged with the popularity of cloud services\cite{ramachandran_recommendations_2014}.\\
+\\
+Virtual machine escaping only occurs on servers that run virtual machines, such AWS\cite{aws_amazon_2016}. These virtual servers are used by companies to host their websites. If a user of the system can find a way to escape the virtual environment and somehow access another user's environment, they would have complete access to all the files. This is called virtual machine escaping and has already affected some large cloud services providers\cite{cloudstrike_venom_2016}.
 
 \subsection{Insecure Cryptography}
 
