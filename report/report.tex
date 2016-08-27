@@ -84,8 +84,16 @@ This is a significant issue, as a malicious employee could take user's records f
 
 Virtual machine escaping is a newer vulnerability that has only really emerged with the popularity of cloud services\cite{ramachandran_recommendations_2014}.\\
 \\
-Virtual machine escaping only occurs on servers that run virtual machines, such AWS\cite{aws_amazon_2016}. These virtual servers are used by companies to host their websites. If a user of the system can find a way to escape the virtual environment and somehow access another user's environment, they would have complete access to all the files. This is called virtual machine escaping and has already affected some large cloud services providers\cite{cloudstrike_venom_2016}.
+Virtual machine escaping only occurs on servers that run virtual machines, such AWS\cite{aws_amazon_2016}. These virtual servers are used by companies to host their websites. If a user of the system can find a way to escape the virtual environment and somehow access another user's environment, they would have complete access to all the files. This is called virtual machine escaping and has already affected some large cloud services providers\cite{cloudstrike_venom_2016}.\\
+\\
+This type of vulnerability has potential to cause a lot of damage to many companies, as there could be dozens of virtual machines owned by different companies on a single server. Thus an attacker could compromise many companies at once.
 
 \subsection{Insecure Cryptography}
+
+Crytography is at the heart of web security. It provides a way of securing communication between the server and clients. This is important as the internet is not a secure communication channel\cite{nisha_overview_2010}, meaning that anyone can intercept messages between the client and server. Thus when communicating over the internet, its important to encrypt sensitive information to ensure it cannot be intercepted by third parties.
+
+For this reason, it is vital to ensure the algorithms used to encrypt the data is secure. However this is difficult, as researchers are always attempting to find new ways to break cryptography algorithms. An example of this is MD5, which was a popular hashing algorithm used on many webpages. When MD5 was created in 1992 it was secure, however over time security researchers have found many security vulnerabilities\cite{ora_data_2015}, allowing attackers to easily break the hashing algorithm to break into password databases.
+
+Insecure cryptography is a serious vulnerability to a company and has the potential to cause a lot of damage. Failure to secure cryptography can lead to a data breach and other threats.
 
 \section{Conclusion}
