@@ -15,7 +15,7 @@ E: 100
 ```
 
 ## Q2
-![Calculation](resources/wk7_calc.png "Calculation")
+![Calculation](resources/wk7_calc.PNG "Calculation")
 \ 
 
 ## Q3
