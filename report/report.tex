@@ -61,7 +61,7 @@ In order to make the experience more seemless, websites adopt various techniques
 
 \begin{itemize}
     \item Single Sign On\\
-        Single sign on provides a uniform method of authenicating with a service. This method allows users to remember only one password, however if that password is compromised an attacker could get access many accounts at once.
+        Single sign on provides a uniform method of authenicating with a service. This method allows users to remember only one password, however if that password is compromised an attacker could get access many accounts at once\cite{lu_keeping_2014}.
 
     \item Persistant login\\
         Persistant login allows user's sessions to be saved to allow user's to access the service later without having to reenter their password.\cite{soares_secure_2013}. However if an attacker gains physical access to a device, they can access the all of the user's services without needing to log in.
@@ -69,23 +69,18 @@ In order to make the experience more seemless, websites adopt various techniques
 
 Overall these methods allow user's easier access to a service, they also provide easy access to an attacker. Thus this vulnerability could open the doors to a possible service hijack threat.
 
-\subsection{Insecure APIs}
-An API is a method of access data from a web service, including personal records and user data. For this reason it is vital that these are secure \cite{lu_keeping_2014}.\\
-\\
-One of the largest attack vectors for API's is weak password hashing. If the api is using weak security than the attacker can intercept the password and exploit it to access a user's data. This is a significant threat, as if this can happen all user's of the service can get their credentials stolen and account compromised, leading to a serious service hijack threat.
-
 \subsection{Malicious Employees}
 
-Another possible vulnerability are malicious employees. Generally companies spend considerable resources securing information systems from the outside, however generally they lack the same level of security within the company. This can include giving employees incorrect permissions on file systems and not securing rooms that contain sensitive documents.\\
-\\
+Another possible vulnerability are malicious employees. Generally companies spend considerable resources securing information systems from the outside, however generally they lack the same level of security within the company. This can include giving employees incorrect permissions on file systems and not securing rooms that contain sensitive documents.
+
 This is a significant issue, as a malicious employee could take user's records from a database and leak password. This would cause damage to both the business and the user's of the system.
 
 \subsection{Virtual Machine Escape}
 
-Virtual machine escaping is a newer vulnerability that has only really emerged with the popularity of cloud services\cite{ramachandran_recommendations_2014}.\\
-\\
-Virtual machine escaping only occurs on servers that run virtual machines, such AWS\cite{aws_amazon_2016}. These virtual servers are used by companies to host their websites. If a user of the system can find a way to escape the virtual environment and somehow access another user's environment, they would have complete access to all the files. This is called virtual machine escaping and has already affected some large cloud services providers\cite{cloudstrike_venom_2016}.\\
-\\
+Virtual machine escaping is a newer vulnerability that has only really emerged with the popularity of cloud services\cite{ramachandran_recommendations_2014}.
+
+Virtual machine escaping only occurs on servers that run virtual machines, such AWS\cite{aws_amazon_2016}. These virtual servers are used by companies to host their websites. If a user of the system can find a way to escape the virtual environment and somehow access another user's environment, they would have complete access to all the files. This is called virtual machine escaping and has already affected some large cloud services providers\cite{cloudstrike_venom_2016}.
+
 This type of vulnerability has potential to cause a lot of damage to many companies, as there could be dozens of virtual machines owned by different companies on a single server. Thus an attacker could compromise many companies at once.
 
 \subsection{Insecure Cryptography}
@@ -95,5 +90,29 @@ Crytography is at the heart of web security. It provides a way of securing commu
 For this reason, it is vital to ensure the algorithms used to encrypt the data is secure. However this is difficult, as researchers are always attempting to find new ways to break cryptography algorithms. An example of this is MD5, which was a popular hashing algorithm used on many webpages. When MD5 was created in 1992 it was secure, however over time security researchers have found many security vulnerabilities\cite{ora_data_2015}, allowing attackers to easily break the hashing algorithm to break into password databases.
 
 Insecure cryptography is a serious vulnerability to a company and has the potential to cause a lot of damage. Failure to secure cryptography can lead to a data breach and other threats.
+
+\section{Threat Mitigation}
+
+Cloud services contain valuable information, information which should be protected from attackers. There are common methods of preventing and mitigating the vulnerabilities mentioned earlier. Below is a list of the common prevention methods:
+
+\subsection{DDOS Prevention}
+
+The most freqeuent attack against companies are DDOSs, with 2016 breaking the record of daily attacks with 1272 attacks on a single day\cite{kaspersky_kaspersky_2016}. For this reason DDOS mitigation is important. In order to prevent DDOS attacks, the system needs a way to differentiate between normal traffic and attacks. A common method of doing this is using a statistical model to determine outliers (DDOS traffic) \cite{hoque_botnet_2015}.
+
+Once the DDOS traffic is identified, the system needs a way to mitigate the traffic. Generally this involves blocking lists of IP addresses used by the attacker. There are many methods to generate this list, generally they involve using a statistical algorithm to determine if traffic from a source IP is a DDOS attack or general traffic \cite{yu_can_2014}. 
+Some companies, such as Cloud Flare \url{https://cloudflare.com}, provide DDOS protection as a service. A company simply needs to change the nameservers to CloudFlare's nameservers and they handle the rest.
+
+\subsection{Data Breaches and Service Hijacking}
+
+Data breaches are also a significant threat to companies. According to the ITRC, in 2016 28,574,795 records were stolen through 638 individual attacks\cite{barney_2016_2016}.
+There are many methods to prevent data breaches, one such method\cite{doe_secure_2014} involves:
+
+\begin{itemize}
+    \item Use a username and password based login
+    \item Lock the user out of the system after a few failed attempts
+    \item Use one-time passwords when possible
+    \item Use secure encryption algorithms, like Elliptic curve cryptography\cite{rahulamathavan_assessing_2015}
+    \item Use suitable cryptographic methods between the server and client
+\end{itemize}
 
 \section{Conclusion}
