@@ -3,10 +3,31 @@ The Cloud is becoming a larger part of business each year, even companies such a
 
 With the popularity of the cloud increasing, so are the threats against it. User database breaches on large companies such as Twitter and LinkedIn \cite{linkedin_update_2012} are becoming more frequent and as those services grow, so will the potential for a hack against them.
 
+Furthermore attacks are becoming more frequent each year. Verisign, a company that owns part of the internet's core infrastructure, released the following statistics regarding DDoS attacks against their systems:
+
+\begin{table}[h!]
+    \centering
+    \caption{Average attack size of DDoS attacks on Verisign servers\cite{_download_????}}
+    \begin{tabular}{| l | r |}
+        \hline
+        Quarter & Average attack size \\
+        \hline
+        2015 Q1 & 3.64 Gbps \\
+        2015 Q2 & 5.53 Gbps \\
+        2015 Q3 & 7.03 Gbps \\
+        2015 Q4 & 6.88 Gbps \\
+        2016 Q1 & 19.37 Gbps \\
+        \hline
+    \end{tabular}
+    \label{table:1}
+\end{table}
+
+As the Verisign statistics show, both the frequency and volume of attacks are increasing, meaning companies will need to consider security much more as the size and frequency of attacks increase.
+
 \section{What is the Cloud?}
 The Cloud is a term used to refer to a collection of servers on the internet.
 These servers are owned by companies who rent out the system's resources to customers as 'services'. 
-Most cloud computing companies provide a variety of services, such as database storage (e.g. Amazon RDS \cite{aws_amazon_2016}), computational power (e.g. Google Compute Engine \cite{google_compute_2016}) and networking (e.g. Google CVN \cite{google_virtual_2016}).
+Most cloud computing companies provide a variety of services, such as database storage (e.g. Amazon RDS \cite{aws_amazon_2016}), computational power (e.g. Google Compute Engine \cite{google_compute_2016}) and networking (e.g. Google CVN).
 
 These services can be divided into three categories \cite{ibm_ibm_2016}:
 \begin{itemize}
@@ -57,7 +78,7 @@ DoS attacks are some of the most frequent, since they are relatively easy to do.
 \subsection{Ease of Use}
 
 Users enjoy a system which is accessible and easy to use. So much so that usability is a large part when designing user facing applications. 
-In order to make the experience more seemless, websites adopt various techniques to streamline the process. For example Single Sign On and persistant log ins. These methods may streamline a user's experience, however thos leads to security vulnerabilties\cite{javaid_secure_2013}.
+In order to make the experience more seemless, websites adopt various techniques to streamline the process. For example Single Sign On and persistant log ins. These methods may streamline a user's experience, however this can lead to security vulnerabilties\cite{javaid_secure_2013}.
 
 \begin{itemize}
     \item Single Sign On\\
@@ -79,13 +100,13 @@ This is a significant issue, as a malicious employee could take user's records f
 
 Virtual machine escaping is a newer vulnerability that has only really emerged with the popularity of cloud services\cite{ramachandran_recommendations_2014}.
 
-Virtual machine escaping only occurs on servers that run virtual machines, such AWS\cite{aws_amazon_2016}. These virtual servers are used by companies to host their websites. If a user of the system can find a way to escape the virtual environment and somehow access another user's environment, they would have complete access to all the files. This is called virtual machine escaping and has already affected some large cloud services providers\cite{cloudstrike_venom_2016}.
+Virtual machine escaping only occurs on servers that run virtual machines, such as AWS. These virtual servers are used by companies to host their websites. If a user of the system can find a way to escape the virtual environment and somehow access another user's environment, they would have complete access to all the files. This is called virtual machine escaping and has already affected some large cloud services providers\cite{cloudstrike_venom_2016}.
 
 This type of vulnerability has potential to cause a lot of damage to many companies, as there could be dozens of virtual machines owned by different companies on a single server. Thus an attacker could compromise many companies at once.
 
 \subsection{Insecure Cryptography}
 
-Crytography is at the heart of web security. It provides a way of securing communication between the server and clients. This is important as the internet is not a secure communication channel\cite{nisha_overview_2010}, meaning that anyone can intercept messages between the client and server. Thus when communicating over the internet, its important to encrypt sensitive information to ensure it cannot be intercepted by third parties.
+Cryptography is at the heart of web security. It provides a way of securing communication between the server and clients. This is important as the internet is not a secure communication channel\cite{nisha_overview_2010}, meaning that anyone can intercept messages between the client and server. Thus when communicating over the internet, its important to encrypt sensitive information to ensure it cannot be intercepted by third parties.
 
 For this reason, it is vital to ensure the algorithms used to encrypt the data is secure. However this is difficult, as researchers are always attempting to find new ways to break cryptography algorithms. An example of this is MD5, which was a popular hashing algorithm used on many webpages. When MD5 was created in 1992 it was secure, however over time security researchers have found many security vulnerabilities\cite{ora_data_2015}, allowing attackers to easily break the hashing algorithm to break into password databases.
 
@@ -113,6 +134,17 @@ There are many methods to prevent data breaches, one such method\cite{doe_secure
     \item Use one-time passwords when possible
     \item Use secure encryption algorithms, like Elliptic curve cryptography\cite{rahulamathavan_assessing_2015}
     \item Use suitable cryptographic methods between the server and client
+    \item Use suitable encryption on the databases
 \end{itemize}
 
+These strategies will not stop data breaches completely, but will minimize the risk and severity of a data breach if it happens.
+
+\subsection{Virtual Machine Escaping}
+
+Virtual machine escaping is the hardest to prevent, as the provisioning and infrastructure is out of the company's control. These are usually handled by hosting providers such as Digital Ocean or AWS.
+However a company can still implement measures to mitigate this kind of attack. Such mitigation methods include using strong encryption for any important information and ensuring server log files don't leak confidential information\cite{witti_security_2016}.
+
 \section{Conclusion}
+
+Overall there are countless threats to the cloud. However with the correct security measures in place most of these risks can be mitigated.
+If these threats are not addressed, there could be severe consequences to the business responsible as most countries have laws to ensure that their citizen's data is stored in a secure way. Ensuring these systems are secure is becoming more and more important, as businesses move to cloud services and user's grow accustomed to accessing systems via websites.
