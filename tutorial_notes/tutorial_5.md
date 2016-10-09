@@ -23,7 +23,7 @@ A valid user is rejected by the system
 
     - Permanence
 
-    Medium: People can change their hair colour
+    Low: People can change their hair colour
 
     - Performance
 
@@ -35,13 +35,13 @@ A valid user is rejected by the system
 
     - Circumvention
 
-    Low: Its easy to fake a hair colour
+    High: Its easy to fake a hair colour
 
 - __Fingerprint__
 
     - Universality
 
-    High: Everyone has a fingerprint
+    Medium: Everyone has a fingerprint
 
     - Distictiveness
 
@@ -51,13 +51,17 @@ A valid user is rejected by the system
 
     Medium: Fingerprints can be damaged with cuts, etc.
 
+    - Performance
+    
+    High: Fast and accurate
+
     - Acceptability
 
     High: Easy to do and non invasive
 
     - Circumvention
 
-    High: Hard to fake a fingerprint
+    Medium: Hard to fake a fingerprint
 
 ## Question 3
 
