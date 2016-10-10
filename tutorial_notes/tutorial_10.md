@@ -16,9 +16,11 @@ Using a online tool to guess the key length yields 7 with a probability of aroun
 
 ## Q3: Prime factors
 
-`21: 3 * 7`
-`24: 2 * 2 * 2 * 3`
-`96: 2 * 2 * 2 * 2 * 2 * 3`
+```
+21: 3 * 7
+24: 2 * 2 * 2 * 3
+96: 2 * 2 * 2 * 2 * 2 * 3
+```
 
 ## Q4: Modulo Arithmetic
 
@@ -51,6 +53,7 @@ a6 = 78125 mod 7 = 5
 ```
 
 b)
-
-`log5(4) mod 7 = 2`
-`log5(6) mod 7 = 3`
+```
+log5(4) mod 7 = 2
+log5(6) mod 7 = 3
+```
