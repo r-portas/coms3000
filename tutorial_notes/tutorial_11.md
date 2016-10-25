@@ -10,6 +10,8 @@ Bob computes:    23^7 mod 29 = 1
 Alice and Bob share the secret key (1)
 ```
 
+Security is heavily dependant on the difficulty of computing discrete logarithms for finding the secret x and y
+
 ## Q2
 
 Trudy could act as a proxy for Alice and Bob, so Alice would exchanges keys with Trudy, thinking it was Bob. Bob would also exchange keys with Trudy, thinking it was Alice.
@@ -68,6 +70,8 @@ c = m^7 mod 77
 39 = 18(R)^7 mod 77
 68 = 19(S)^7 mod 77
 1  = 1(A)^7 mod 77
+
+{39, 68, 1}
 ```
 
 ## Q5

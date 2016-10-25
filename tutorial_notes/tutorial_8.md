@@ -32,11 +32,12 @@ Thus the message can be easily found.
 ## Question 2
 
 ```
-Plaintext: TRANPOSITION
+Plaintext: TRANSPOSITION
 
 TRAN
-POSI
-TION
+SPOS
+ITIO
+N
 
-Encrypted: TPT ROI ASO NIN
+Encrypted: TSIN RPT AOI NSO
 ```

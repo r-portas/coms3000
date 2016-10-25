@@ -4,19 +4,29 @@
 
 The entropy is log to base 2 of the number of possible outcomes. Thus in this case `log2(5) = 2.32`.
 
-The smallest encoding scheme would be 3 bits. Such as:
+The smallest encoding scheme would be 2.4 bits. Such as:
 
 ```
-A: 000
-B: 001
-C: 010
-D: 011
-E: 100
+A: 11
+B: 01
+C: 10
+D: 001
+E: 000
+
+{11, 01, 10, 001, 000}
 ```
 
 ## Q2
-![Calculation](resources/wk7_calc.PNG "Calculation")
-\ 
+```
+H(x) = -sum(p_i * log2 p_i)
+h(x) = -p_1 log(p_1) - p_2 log(p_2)
+h(p_1) = -p_1 log(p_1) - (1 - p_1) log(1 - p_1)
+h'(p_1) = log(p_1) + log(p_1 - 1) = 0
+
+p_2 = 1 - p_1 = 0.5
+p_2 = 0.5
+p_1 = 0.5
+```
 
 ## Q3
 
