@@ -1,6 +1,6 @@
 # Tutorial 6: Access Control
 
-## Question 1
+## Q1: User Permissions
 
 a)
 
@@ -18,10 +18,9 @@ b)
 | Bob          | -                      | {execute}              | -                      |
 | Charlie      | {read, write, execute} | {read, write, execute} | {read, write, execute} |
 
-## Question 2
+## Q2: Unix Permissions
 
-a) 
-
+a) `-rwxr-x--- bill student thefile.txt`
 
 Owner: read, write, execute
 
@@ -30,7 +29,7 @@ Student group: read, execute
 Other: -
 
 
-b)
+b) `-r-xrwxr-- bill student thefile.txt`
 
 Owner: read, execute
 
@@ -40,11 +39,11 @@ Other: read
 
 Bill does not have write access, because his owner priviledges override the group ones
 
-## Question 3
+## Q3: What is the problem with SUID feature in Unix
 
 SUID allows users to run a program with the owner's priviledges, this is useful for system services such as restarting the network stack. This allows user's to access programs that usually only root has access to. However if a program is replaced with malicous code, an attacker could execute commands as root.
 
-## Question 4
+## Q4: What is the difference between DAC and MAC
 
 __Mandatory Access Control__
 - Every user has a clearance level
@@ -56,15 +55,15 @@ __Discretionary Access Control__
 - Allows user's to choose who can access a file
 - Permissions defined by the owner
 
-## Question 5
+## Q5: What is a part of Unix that acts like MAC
 
 From memory, the system startup process (init/systemd) starts up as root, launches the system processes as root then locks out access to those processes once the system startup is done. I believe once systemd has started the system, it revokes its root privileges and becomes a standard system user.
 
-## Question 6
+## Q6: What is the difference between a "classification" and a "clearance"?
 
 Documents have a classification, which is the access level required to view or edit it. Clearance is the process of giving a user permission to view classified files.
 
-## Question 7
+## Q7: What is the main goal of the Bell-LaPadula model?
 
 The main goal of the Bell-LaPadula model is to ensure information does not leak down. Meaning a person with unclassified clearance cannot access files with classified clearance. It can be broken down into two rules
 

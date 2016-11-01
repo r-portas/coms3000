@@ -1,6 +1,6 @@
 # Tutorial 5: Biometrics and Access Control
 
-## Question 1
+## Q1: Explain what a false accept and false reject is
 
 - __False Accept__
 
@@ -10,7 +10,7 @@ An attacker successfully authenticates as somebody else and is granted access to
 
 A valid user is rejected by the system
 
-## Question 2
+## Q2: Compare Biometrics
 
 - __Hair Colour__
     - Universality
@@ -63,7 +63,7 @@ A valid user is rejected by the system
 
     Medium: Hard to fake a fingerprint
 
-## Question 3
+## Q3: Biometric Attacks
 
 ![block diagram](resources/tut_5_block_diagram.png "Block Diagram")
 
@@ -73,7 +73,7 @@ Two potential replay attacks are:
 
 2. Setting up a fake server, intercepting a valid transaction then setting up a fake server to mirror the responses.
 
-## Question 4
+## Q4: A biometric device can be used in identification mode or verification mode. In which situation will we have a higher False Match Rate?
 
 a) Identification has the highest false match rate, this is because the device is searching through a database to find the highest match against many different users. Whereas verification is checking against a single user, thus less chance of a false match.
 
