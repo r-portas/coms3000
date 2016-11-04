@@ -85,5 +85,5 @@
 - Often, qualitative methods are used
 - If Risks cannot be qualified, they are often ranked: highest to lowest
 
-![Australian Risk Management Policies and Guidelines](resources/us_risk_policies.png)
+![Australian Risk Management Policies and Guidelines](resources/aus_risk_policies.png)
 
