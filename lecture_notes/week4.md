@@ -1,13 +1,11 @@
-# Week 4 Lecture
+# Week 4 : Biometrics and Security Models
 
-## Biometrics
-
-### Types of Biometrics
+## Types of Biometrics
 
 - Physiological biometrics
 ...
 
-### Criteria for Good Biometrics
+## Criteria for Good Biometrics
 
 - Universality
 - Distinctness
