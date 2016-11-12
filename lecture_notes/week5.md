@@ -19,7 +19,7 @@
 - `I(X) * P(X)`
 
 ## Shannon's Measure of Information
-- The above can be simpified into a single equation:
+- The above can be simplified into a single equation:
 ![Shannon Equation](resources/shannon_equation.png)
 \ 
 - Shannon Information (Entropy) is the _weighted_ average of Hartley Information
@@ -38,10 +38,10 @@
 - Redundancy can be used to correct errors
 - Less redundancy means less error tolerance
 
-## Entropy of the English Lnaguage
+## Entropy of the English Language
 - 26 letters
 - If all letters are equally likely: `H(X) = log2(26) = 4.7 bits`
-- With letter frequencies in english: `H(X) = 3.9 bits`
+- With letter frequencies in English: `H(X) = 3.9 bits`
 
 ## Password Entropy
 - Entropy is often used as a quality measure of passwords
@@ -55,7 +55,7 @@
 - Cryptanalysis
     - Science and art of breaking message security
 - Cryptology
-    - Science of secret communications (theory and mathematics) associated with cryptography and cryptanlysis
+    - Science of secret communications (theory and mathematics) associated with cryptography and cryptanalysis
 
 ## Cryptography
 - Primary Aim
@@ -74,11 +74,11 @@
 
 ## Cryptographic Algorithms (Ciphers)
 - We have to ensure that only legitimate or authorised users are able to encrypt and decrypt
-- A simple way to do this is to restrict knowledge of the algorithms to authorised individiuals
+- A simple way to do this is to restrict knowledge of the algorithms to authorised individuals
     - Keep Encryption/Decryption algorithm secret
 - __Problem__
     - This would mean that for every different set of people who wanted to communicate, there would have to be a different algorithm
-    - It becomes very impractical to keep using different algorithms, it is rather difficult to invent new ones which are resistant to cryptanlysis
+    - It becomes very impractical to keep using different algorithms, it is rather difficult to invent new ones which are resistant to cryptanalysis
     - If an encryption algorithm gets in the hand of an attacker, we need to invent a new algorithm
 
 ## Cryptographic Keys
@@ -93,7 +93,7 @@
 - _The security of a cipher should rely on the secrecy of the key only_
 - Assumption: Attacker knows every detail of the cryptographic algorithm
 - Rationale:
-    - A determined attacke is generally able to obtain a blueprint of an encryption/decryption algorithm anyway, by clever deduction
+    - A determined attacks is generally able to obtain a blueprint of an encryption/decryption algorithm anyway, by clever deduction
     - Cryptographic history has demonstrated this many times over
 - Alternative
     - Security through Obscurity
@@ -177,4 +177,4 @@
 - Security proof:
 ![One Time Pad Proof](resources/one_time_pad_proof.png)
 \ 
-- Brute force does not work against
+- Brute force does not work against OTP
