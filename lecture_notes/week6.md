@@ -28,7 +28,7 @@
 \ 
 
 ### Feistal Example
-![Fiestal Example](resources/feistel_example.gif)
+![Fiestal Example](resources/feistel_example.png)
 \ 
 
 ## DES (Data Encryption Standard
@@ -213,7 +213,7 @@
 
 
 ## Cipher Feedback Mode (CFB)
-![CFB Encryption](resources/cdb_encryption.png)
+![CFB Encryption](resources/cfb_encryption.png)
 \ 
 
 - CFB Error Propagation
