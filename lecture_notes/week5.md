@@ -20,8 +20,10 @@
 
 ## Shannon's Measure of Information
 - The above can be simplified into a single equation:
+
 ![Shannon Equation](resources/shannon_equation.png)
 \ 
+
 - Shannon Information (Entropy) is the _weighted_ average of Hartley Information
 - When all outcomes are equally likely, Hartly Information is the same as Shannon Information
 
@@ -175,6 +177,8 @@
     - An attacker has the same chance of guessing the message with or without knowing the ciphertext
     - Shannon proofs that if `P(M|C) = P(M)`, an attacker gains 0 bits of information from observing the ciphertext
 - Security proof:
+
 ![One Time Pad Proof](resources/one_time_pad_proof.png)
 \ 
+
 - Brute force does not work against OTP

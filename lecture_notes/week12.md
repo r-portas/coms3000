@@ -12,7 +12,7 @@
 ## EMV Chip Cards
 - Prevents criminals from producing cloned magnetic strip cards
 
-![PCI Terminology](resources/pci_terminology.pci_terminology.jpg)
+![PCI Terminology](resources/pci_terminology.jpg)
 \ 
 
 ## Payment Card Operations
