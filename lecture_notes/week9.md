@@ -163,12 +163,12 @@
 
 ## IEEE 802.11 Standards
 
-![802.11 Standards](resources/802_standards.png)
+![802.11 Standards](resources/802_standards.jpg)
 \ 
 
 ## IEEE 802.11b DSSS Channels
 
-![802.11 Channels](resources/802_channels.png)
+![802.11 Channels](resources/802_channels.jpg)
 \ 
 
 ## 802.11a OFDM Channels
@@ -244,7 +244,7 @@ STA -> AP: Ack
 - An AP in a RSN must not associate with pre-RSNA STAs
 - AP must include a RSN IE in Beacon frames, showing group cipher CCMP or TKIP, but not WEP
 
-![Pairwise Combinations of RSN IE](resources/rsn_combinations.png)
+![Pairwise Combinations of RSN IE](resources/rsn_combinations.jpg)
 \ 
 
 ## WPA (Wifi Protected Access)
@@ -265,8 +265,8 @@ STA -> AP: Ack
 - WPA2 must provide both TKIP and AES-CCMP
 - WPA does not do PMK caching of pre authentication
 
-![Wifi Tree](resources/wifi_tree.png)
+![Wifi Tree](resources/wifi_tree.jpg)
 \ 
 
-![TSN RSN](resources/tsn_rsn.png)
+![TSN RSN](resources/tsn_rsn.jpg)
 \ 
