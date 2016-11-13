@@ -75,9 +75,17 @@ Two potential replay attacks are:
 
 ## Q4: A biometric device can be used in identification mode or verification mode. In which situation will we have a higher False Match Rate?
 
-a) Identification has the highest false match rate, this is because the device is searching through a database to find the highest match against many different users. Whereas verification is checking against a single user, thus less chance of a false match.
+### a) Explain your answer using an intuitive argument.
 
-b) 
+Identification has the highest false match rate, this is because the device is searching through a database to find the highest match against many different users. Whereas verification is checking against a single user, thus less chance of a false match.
+
+### b)
+Use a simple mathematical argument. For this you can make the following assumptions: 
+
+We can model both identification and verification as random processes. Let P 1 be the probability of a False Match (false accept) in a verification trial, where we have a 1-to-1 
+match problem. We now want to find PN, the probability of a False Match in an 
+identification trial, searching through a database of size N. The identification process (1-to-N match) can be modeled as N independent verification processes (1-to-
+1 matches)
 
 ```
 P1: Probability of a False Match in verification mode
@@ -89,7 +97,10 @@ PN = P1 * N
 
 ## Question 5
 
-a) 
+![PDF Function](resources/t5_pdf.jpg)
+\ 
+
+### a) For a threshold of t = 5.5, what are the parameters FAR (FMR) and FRR (FNMR)?
 
 ```
 FMR: a * 0.5 = 0.125
@@ -99,7 +110,9 @@ a: 1/(6 - 2) = 0.25
 b: 1/(7 - 5) = 0.5
 ```
 
-b) The t value will need to be closer to 5 to achieve a smaller FNMR. However this will increase the FMR.
+### b) You are asked to adjust the system so that FNMR=2.5%. Where do you need to set the threshold t to achieve this? What is the resulting FMR?
+
+The t value will need to be closer to 5 to achieve a smaller FNMR. However this will increase the FMR.
 
 Thus the exact answer will be:
 
@@ -113,7 +126,7 @@ act = 5.05
 FMR: 0.2375
 ```
 
-c) Equal error rate
+### c) What is the Equal error rate?
 
 ```
 (6 - t) * 0.25 = (t - 5) * 0.5

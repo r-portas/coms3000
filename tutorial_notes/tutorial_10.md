@@ -4,6 +4,9 @@
 
 Using a online tool to guess the key length yields 7 with a probability of around 13%.
 
+![t10 analysis](resources/t10_analysis.jpg)
+\ 
+
 ## Q2: Prime Numbers
 
 | Number   | Prime? |
@@ -34,7 +37,13 @@ c) 1
 
 a) 9
 
+![Q5 A](resources/q5_a.jpg)
+\ 
+
 b) 4
+
+![Q5 B](resources/q5_b.jpg)
+\ 
 
 ## Q6
 
@@ -43,13 +52,15 @@ a)
 It is a generator if `gcd(a, n-1) = 1`
 Thus `gcd(5, 6) = 1`, therefore it is a generator
 
+
+Calculate every possible number
 ```
 a1 = 5 mod 7 = 5
 a2 = 25 mod 7 = 4
 a3 = 125 mod 7 = 6
 a4 = 625 mod 7 = 2
 a5 = 3125 mod 7 = 3
-a6 = 78125 mod 7 = 5
+a6 = 78125 mod 7 = 1
 ```
 
 b)

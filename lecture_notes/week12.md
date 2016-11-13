@@ -66,17 +66,3 @@
 ![PAN Validate](resources/pan_validate.jpg)
 \ 
 
-## Cloud Security
-
-### Key Characteristics
-1. Broad network access
-2. On demand self service
-3. Multi-tenancy
-4. Resource pooling
-5. Rapid elasticity and scalability
-6. Measured service
-
-### Types of Cloud Computing
-1. Infrastructure as a Service
-2. Platform as a Service
-3. Software as a Service

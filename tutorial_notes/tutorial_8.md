@@ -1,8 +1,10 @@
 # Tutorial 8: Symmetric Cryptography
 
-## Question 1
+## Q1
 
-a) The encrypted message will be K XOR M1:
+### a) Encrypt the message with a one time pad
+
+The encrypted message will be K XOR M1:
 
 ```
 M1: 11011001
@@ -11,7 +13,9 @@ K:  01011000
 C1: 10000001
 ```
 
-b) There is no way to find the original message with just the ciphertext. However if Eve does know the key or knows other messages encrypted with the same key, she could decrypt the message.
+b) 
+
+There is no way to find the original message with just the ciphertext. However if Eve does know the key or knows other messages encrypted with the same key, she could decrypt the message.
 
 c)
 
@@ -29,7 +33,7 @@ M2: 11100110
 
 Thus the message can be easily found.
 
-## Question 2
+## Q2: Encrypt with transposition cipher
 
 ```
 Plaintext: TRANSPOSITION

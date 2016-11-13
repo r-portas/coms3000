@@ -1,6 +1,6 @@
 # Tutorial 12: Wireless, Cloud and Industrial Control Systems
 
-## Q1
+## Q1: What channels can be used if channel 8 is already in use
 
 There are 16 DSSS channels, looking at the diagram we can see that the channels 1, 2, 3 and 13 are available.
 
@@ -12,7 +12,7 @@ Main Failures of WEP:
 - Key Vulnerabilities
 - Weak IV
 
-## Q3
+## Q3: What is CCMP
 
 Counter Mode Cipher Block Chaining, an encryption protocol for wireless that implements 802.11i. Focusses on data confidentiality
 

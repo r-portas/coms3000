@@ -77,6 +77,11 @@ A subject at a given security level must not write to any object at a lower secu
 
 ## Question 8
 
+Assume that the Bell-LaPadula security model has been implemented in a system.
+Alice has a ‘secret’ clearance and Bob’s clearance is ‘classified’.
+Which of the following operations are allowed, assuming that both Alice and Bob operate
+at their highest clearance level?
+
 Allowed methods:
 
 - Alice reads a document written by Bob
@@ -89,10 +94,10 @@ Allowed methods:
 ![Lattice](resources/AuthLattice.png "Lattice")
 \ 
 
-## Question 10
+## Q10: In a multilevel policy (assume BLP), what action would cause the subject’s “highwater mark” to change? Give an example.
 
 Reading a file above the current security level will cause the user's high water mark to move. As this will change the current security level to the level of the file.
 
-## Question 11
+## Q11: What is a covert channel? Give an example.
 
 A covert channel allows the transfer of information between processes who are not mean't to communicate with each other, as outlined by the system's security policy.
